@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="CSDLShopMeVaBe">
+  <DataContextMoniker Name="/CSDLShopMeVaBeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1bfafb37-8a86-43bb-9d36-fdccfdf8742f" absoluteBounds="0.75, 6.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CSDLShopMeVaBeDataContext/DangNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93d06e9b-d977-4731-9437-5419e0a42980" absoluteBounds="0.765, 7.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68363b89-37cf-43dc-a08a-943149af76d0" absoluteBounds="0.75, 3.75, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/CSDLShopMeVaBeDataContext/SanPham" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0ed4581-e29f-484b-8845-26604f9c9e5f" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d75758e0-4a91-4d8c-b8b7-f85b0e6599a2" absoluteBounds="3.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CSDLShopMeVaBeDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3e077a5-a65d-4b97-8df8-d247e0eb9e2e" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d33db7c-ce98-45f7-89b2-a6334abb59cf" absoluteBounds="3.75, 6.625, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/CSDLShopMeVaBeDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3f39539-0409-43d6-8ea5-7f3174952528" absoluteBounds="3.765, 7.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac226f24-b8fe-4d41-a886-03b1438b855a" absoluteBounds="3.5, 3.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/CSDLShopMeVaBeDataContext/PhieuNhapHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f76463b5-0c9b-49bd-8d11-23e7194ea054" absoluteBounds="3.515, 3.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e4511ec-7bc4-41ec-b2c5-ef61b87297cd" absoluteBounds="6.5, 3.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/CSDLShopMeVaBeDataContext/PhieuXuatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="275de43c-e1b0-4124-b0c7-37d9b1b7ad47" absoluteBounds="6.515, 3.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.63544840494792); (3.5 : 4.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CSDLShopMeVaBeDataContext/SanPham/SanPham_PhieuNhapHang" />
+      <nodes>
+        <classShapeMoniker Id="68363b89-37cf-43dc-a08a-943149af76d0" />
+        <classShapeMoniker Id="ac226f24-b8fe-4d41-a886-03b1438b855a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 1.63544840494792); (7.5 : 1.63544840494792); (7.5 : 3.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CSDLShopMeVaBeDataContext/KhachHang/KhachHang_PhieuXuatHang" />
+      <nodes>
+        <classShapeMoniker Id="d75758e0-4a91-4d8c-b8b7-f85b0e6599a2" />
+        <classShapeMoniker Id="6e4511ec-7bc4-41ec-b2c5-ef61b87297cd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.52089680989583); (3.125 : 5.89589680989583); (3.125 : 6.22280110677083); (6.125 : 6.22280110677083); (6.5 : 5.84780110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CSDLShopMeVaBeDataContext/SanPham/SanPham_PhieuXuatHang" />
+      <nodes>
+        <classShapeMoniker Id="68363b89-37cf-43dc-a08a-943149af76d0" />
+        <classShapeMoniker Id="6e4511ec-7bc4-41ec-b2c5-ef61b87297cd" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
